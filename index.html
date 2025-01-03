@@ -4,11 +4,376 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+  <link rel="stylesheet" href="style.css">
+  <title>Portfolio</title>
 </head>
 
 <body>
-  hwyyyyyy
+
+  <div class="bg-gradient">
+    <ul class="bg-bubble">
+      <li></li>
+      <li></li>
+
+    </ul>
+    <div class="container">
+      <header class="header">
+        <div class="lists header-bg">
+          <span>
+            <i class="fa-solid fa-bars-staggered icons"></i>
+          </span>
+          <span>
+            <i class="fa-regular fa-moon icons"></i>
+          </span>
+          <span>
+            <i class="fa-solid fa-cart-shopping icons"></i>
+          </span>
+        </div>
+        <nav class="navigation">
+          <ul class="lists header-bg">
+            <li class="list">
+              <span class="nav-icon">
+                <i class="fa-regular fa-user"></i>
+              </span>
+              <a href="#about" class="a">About</a>
+            </li>
+            <li class="list">
+              <span class="nav-icon">
+                <i class="fa-regular fa-rectangle-list"></i>
+              </span>
+              <a href="#" class="a">Resume</a>
+            </li>
+            <li class="list">
+              <span class="nav-icon">
+                <i class="fa-solid fa-eye"></i>
+              </span>
+              <a href="#" class="a">Works</a>
+            </li>
+            <li class="list">
+              <span class="nav-icon">
+                <i class="fa-regular fa-newspaper"></i>
+              </span>
+              <a href="#" class="a">Blogs</a>
+            </li>
+            <li class="list">
+              <span class="nav-icon">
+                <i class="fa-regular fa-paper-plane"></i>
+              </span>
+              <a href="#" class="a">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="grid main">
+        <section class="profile">
+          <div class="img">
+            <!-- <img src="https://ryancv.bslthemes.com/wp-content/uploads/2021/12/man5_big.jpeg" alt="image" class="img"> -->
+          </div>
+
+          <div class="main-item">
+            <p class="title">Ryan Adlard</p>
+            <div class="skill">
+              <span>Web Developer</span>
+              <!-- <span>Web Designer</span>
+              <span>Freelancer</span>
+              <span>Front-end Developer</span> -->
+
+            </div>
+            <div class="logoes">
+              <span class="logo">
+                <ion-icon name="logo-html5"></ion-icon>
+              </span>
+              <span class="logo">
+                <ion-icon name="logo-css3"></ion-icon>
+              </span>
+              <span class="logo">
+                <ion-icon name="logo-javascript"></ion-icon>
+              </span>
+              <span class="logo">
+                <ion-icon name="logo-react"></ion-icon>
+              </span>
+              <span class="logo">
+                <ion-icon name="logo-github"></ion-icon>
+              </span>
+              <span class="logo">
+                <ion-icon name="logo-stackoverflow"></ion-icon>
+              </span>
+            </div>
+          </div>
+          <ul class="profile-contacts">
+            <li class="profile-list">
+              <span>
+                <a href="#" class="profile-cv">Download CV </a>
+              </span>
+              <span>
+                <ion-icon name="download" class="profile-icon"></ion-icon>
+              </span>
+            </li>
+            <li class="profile-list">
+              <span>
+                <a href="#" class="profile-contact">Conact me
+                </a>
+              </span>
+              <span>
+                <ion-icon name="navigate" class="profile-icon"></ion-icon>
+              </span>
+            </li>
+          </ul>
+          <!-- </div> -->
+        </section>
+        <!-- <section class="about-me" id="about">
+          <div class="card--1">
+            <p class="about-title">
+              <span class="first-letter">A</span>bout Me
+            </p>
+
+            <div class="grid-2-col cards">
+              <div class="card--1 item--1">
+                <p class="card-heading">Hello! I'm Ryan Adlard.</p>
+                <p class="card-text">Web designer from USA, California. I have rich experience in web site design and
+                  building, also I am good at wordpress. I love to talk with you about our unique.</p>
+              </div>
+              <div class="item--2 flex-4-row">
+                <p class="detail flex-2-row">
+                  <span class="detail-title">Age :</span>
+                  <span class="detail-text">24</span>
+                </p>
+                <p class="detail flex-2-row">
+                  <span class="detail-title">Residence :</span>
+                  <span class="detail-text">USA</span>
+                </p>
+                <p class="detail flex-2-row">
+                  <span class="detail-title">Freelance :</span>
+                  <span class="detail-text">Available</span>
+                </p>
+                <p class="detail flex-2-row">
+                  <span class="detail-title">Address :</span>
+                  <span class="detail-text">California, USA</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="service">
+            <p class="about-title"> <span class="first-letter">M</span>y Services
+            </p>
+            <div class="grid-2-col margin-bottom">
+              <div class="grid-item">
+                <span>
+                  <ion-icon name="code-slash" class="textimonial-icon"></ion-icon>
+                </span>
+                <p class="textimonial-title ">Web Development</p>
+                <p class="textimonial-text">Modern and mobile-ready website that will help you reach all of your
+                  marketing.</p>
+              </div>
+              <div class="grid-item">
+                <span>
+                  <ion-icon name="musical-notes" class="textimonial-icon"></ion-icon>
+                </span>
+                <p class="textimonial-title ">Music Writing</p>
+                <p class="textimonial-text">Music copying, writing, creating, transcription, arranging and composition
+                  services.</p>
+              </div>
+              <div class="grid-item">
+                <span>
+                  <ion-icon name="mic" class="textimonial-icon"></ion-icon>
+                </span>
+                <p class="textimonial-title ">Advetising</p>
+                <p class="textimonial-text">Advertising services include television, radio, print, mail, and web apps.
+                </p>
+              </div>
+              <div class="grid-item">
+                <span>
+                  <ion-icon name="game-controller" class="textimonial-icon"></ion-icon>
+                </span>
+                <p class="textimonial-title ">Game Development</p>
+                <p class="textimonial-text">Developing memorable and unique mobile android, ios and video games.</p>
+              </div>
+
+            </div>
+            <div class="pricing">
+              <p class="about-title"><span class="first-letter">P</span>ricing</p>
+              <div class="grid-2-col">
+                <div>
+                  <ul class="pricing-lists">
+
+                    <li><ion-icon name="rocket" class="pricing-icon"></ion-icon></li>
+                    <li class="textimonial-title">Popular</li>
+                    <li class="amount">
+                      <span class="dollar">$</span>
+                      <span class="number">22</span>
+                      <span class="period">hour</span>
+                    </li>
+                    <li class="pricing-list">Web Development</li>
+                    <li class="pricing-list">Advetising</li>
+                    <li class="pricing-list">Game Development</li>
+                    <li class="pricing-list"> Music Writing</li>
+                    <li class=pricing-list">Photography</li>
+                  </ul>
+                  <div class="pricing-order">
+                    <span>
+                      <a href="#">Order now</a>
+                    </span>
+                    <span class="arrow">
+                      <ion-icon name="chevron-forward-outline"></ion-icon>
+                    </span>
+                  </div>
+                </div>
+                <div>
+                  <ul class="pricing-lists">
+                    <li><ion-icon name="ribbon" class="pricing-icon"></ion-icon></li>
+                    <li class="textimonial-title">Premium</li>
+                    <li class="amount">
+                      <span class="dollar">$</span>
+                      <span class="number">48</span>
+                      <span class="period">hour</span>
+                    </li>
+                    <li class="pricing-list">Web Development</li>
+                    <li class="pricing-list">Advetising</li>
+                    <li class="pricing-list">Game Development <span>new</span></li>
+                    <li class="pricing-list"> Music Writing <span>new</span></li>
+                    <li class="pricing-list">Photography</li>
+                  </ul>
+                  <div class="pricing-order">
+                    <span class="link">
+                      <a href="#">Order now</a>
+                    </span>
+                    <span class="arrow">
+                      <ion-icon name="chevron-forward-outline"></ion-icon>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section> -->
+        <section class="resume" id="resume">
+          <p class="about-title">
+            <span class="first-letter">R</span>esume
+          </p>
+          <div class=" card--2 grid-2-col">
+            <div class="card-item-2">
+              <div class="card-margin">
+                <p class="card-title"><span><i class="fa-solid fa-graduation-cap card-2-icon"></i></span>
+                  <span> Experience</span>
+                </p>
+                <ul class="card-list">
+                  <li>2013 - Present</li>
+                </ul>
+                <div class="flex">
+                  <p class="card-textimonial-text">Art Director</p>
+                  <p>gogle</p>
+                </div>
+                <p class="card-light-text">Google Inc.</p>
+                <p class="card-text">Collaborate with creative and development teams on the execution of ideas.</p>
+              </div>
+              <div>
+                <ul class="card-list">
+                  <li>2011 - 2012</li>
+                </ul>
+                <div class="flex">
+                  <p class="card-textimonial-text">Front-End Developer</p>
+                  <p>upwork</p>
+                </div>
+                <p class="card-light-text">Upwork Inc.</p>
+                <p class="card-text">Monitored technical aspects of the front-end delivery for projects.</p>
+
+              </div>
+              <div>
+                <ul class="card-list">
+                  <li>2009 - 2010</li>
+                </ul>
+                <div class="flex">
+                  <p class="card-textimonial-text">Senior Developer</p>
+                  <p>upwork</p>
+                </div>
+                <p class="card-light-text">Envato Inc.</p>
+                <p class="card-text">Optimize your website and apps performance using latest technology.</p>
+
+              </div>
+            </div>
+            <div class="card-item-2">
+              <div class="card-margin">
+                <p class="card-title"> <span><i class="fa-solid fa-landmark card-2-icon"></i></span>
+                  <span> Education</span>
+                </p>
+                <ul class="card-list">
+                  <li>2006 - 2008</li>
+                </ul>
+                <p class="card-textimonial-text">Art University</p>
+                <p class="card-light-text">New York</p>
+                <p class="card-text">Bachelor's Degree in Computer Science ABC Technical Institute, Jefferson, Missouri.
+                </p>
+                <div class="Certificate">
+                  <a href="#" class="Certificate-link">Certificate</a>
+                  <span><i class="fa-solid fa-chevron-right"></i></span>
+                </div>
+              </div>
+              <div>
+                <ul class="card-list">
+                  <li>2005 - 2006</li>
+                </ul>
+                <p class="card-textimonial-text">Programming Course</p>
+                <p class="card-light-text">Paris</p>
+                <p class="card-text">Coursework - Git, WordPress, Javascript, iOS, Android.</p>
+                <div class="Certificate">
+                  <a href="#" class="Certificate-link">Certificate</a>
+                  <span><i class="fa-solid fa-chevron-right"></i></span>
+                </div>
+              </div>
+              <div>
+                <ul class="card-list">
+                  <li>2004 - 2005</li>
+                </ul>
+                <p class="card-textimonial-text">
+                  Web Design Course</p>
+                <p class="card-light-text">London</p>
+                <p class="card-text">Converted Photoshop layouts to web pages using HTML, CSS, and JavaScript.</p>
+                <div class="Certificate">
+                  <a href="#" class="Certificate-link">Certificate</a>
+                  <span><i class="fa-solid fa-chevron-right"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skills">
+            <p class="about-title">
+              <span class="first-letter">S</span>kills
+            </p>
+            <div class="grid-2-col skills-item">
+              <div class="design">
+                <p class="card-title">
+                  <span>
+                    <i class="fa-solid fa-brush card-2-icon"></i>
+
+                  </span>
+                  <span>Design</span>
+                </p>
+
+              </div>
+              <div class="language">
+                <p class="card-title ">
+                  <span> <i class="fa-solid fa-flag card-2-icon"></i></span>
+                  <span>Language</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
