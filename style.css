@@ -666,12 +666,6 @@ RESUME SECTION
   font-size: 1.4rem;
   margin-bottom: 1rem;
 }
-/* .Certificate {
-  font-size: 1.4rem;
-}
-.Certificate:hover {
-  color: #78cc6d;
-} */
 .Certificate-link {
   display: inline-block;
   padding-top: 0.7rem;
@@ -684,14 +678,13 @@ RESUME SECTION
 .Certificate-link:hover {
   color: #78cc6d;
 }
-/* .skills-item {
-  justify-items: center;
-} */
-
 .resume-flex {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.skills-item {
+  margin-bottom: 2.5rem;
 }
 .skill-lists ul {
   list-style: none;
@@ -700,7 +693,7 @@ RESUME SECTION
   gap: 2rem;
 }
 .skill-list {
-  padding: 10px;
+  padding-bottom: 1rem;
   font-size: 1.6rem;
 }
 .skill-list span {
@@ -716,32 +709,77 @@ RESUME SECTION
 }
 .skill-list .progress .percentage {
   position: absolute;
-  /* width: 80%; */
-  width: 0;
   height: 100%;
   background-color: #78cc6d;
   transition: all ease 1s;
 }
+.skill-lists.dotted ul {
+  gap: 1rem;
+}
 .skill-lists.dotted ul li .progress {
+  position: relative;
+  width: 100%;
   background-color: transparent !important;
-  height: 15px;
+  height: 1.4rem;
 }
 .skill-lists.dotted .progress .percentage {
-  position: relative;
-  height: 14px;
+  height: 1.4rem;
+  width: 90%;
   background-color: transparent !important;
+  overflow: hidden;
 }
-.skill-lists.dotted .progress .percentage .circle-da {
+.skill-lists.dotted .progress .percentage .circle-da,
+.skill-lists.dotted .progress .circle-dg {
   position: absolute;
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: space-between;
-  gap: 2rem;
-  /* height: 15px; */
-  /* width: 15px; */
+  align-items: center;
+  height: 1.5rem;
+  padding: 5px;
+  width: 27rem;
+}
+.circle-dg {
+  z-index: 1;
+}
+.skill-lists.dotted .progress .percentage .circle-da span,
+.skill-lists.dotted .progress .circle-dg span {
+  display: block;
+  height: 1.4rem;
+  width: 1.4rem;
+  border-radius: 50%;
+  background: #eee;
 }
 .skill-lists.dotted .progress .percentage .circle-da span {
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 1.4rem;
+  width: 1.4rem;
+  background: #78cc6d;
+}
+.skill-lists.dotted .progress .percentage .circle-da {
+  z-index: 2;
+}
+.skl {
+  gap: 1rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-bottom: 2.5rem;
+}
+.skl-icon {
+  color: #78cc6d;
+  font-size: 2.5rem;
+}
+.skl-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 2rem;
+}
+.skl-width {
+  height: 8.5rem;
+  width: 8.5rem;
+  border: 4px solid #ddd;
   border-radius: 50%;
-  background-color: #eee;
 }
