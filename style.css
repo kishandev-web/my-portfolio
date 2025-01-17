@@ -403,7 +403,7 @@ ABOUT-ME
   background: radial-gradient(
     ellipse at center,
     #ddd 0%,
-    rgba(255, 255, 255, 0) 70%
+    rgba(255, 255, 255, 0) 90%
   );
 }
 .pad {
@@ -759,27 +759,66 @@ RESUME SECTION
 .skill-lists.dotted .progress .percentage .circle-da {
   z-index: 2;
 }
-.skl {
+.skl-grid {
   gap: 1rem;
   font-size: 1.8rem;
   font-weight: 600;
   text-transform: uppercase;
   padding-bottom: 2.5rem;
 }
+.coding,
+.knowledge {
+  width: 100%;
+}
 .skl-icon {
   color: #78cc6d;
   font-size: 2.5rem;
 }
-.skl-circle {
+.skl.skl-circle ul {
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 3rem;
-  padding: 2rem;
+  flex-wrap: wrap;
+  column-gap: 4rem;
 }
-.skl-width {
-  height: 8.5rem;
-  width: 8.5rem;
-  border: 4px solid #ddd;
+.skl.skl-circle ul li {
+  padding: 3rem 0 3rem 0;
+  margin: 0 auto;
+  position: relative;
+
+  display: inline-block;
+}
+.skl.skl-circle ul li .name {
+  position: absolute;
+  top: 140px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6rem;
+}
+.skl ul li .name {
+  margin-bottom: 1rem;
+  line-height: 16px;
+  font-weight: 500;
+}
+.skl.skl-circle ul li .progress {
+  margin: 0 auto;
+  position: relative;
+  width: 9.2rem;
+  height: 9.2rem;
   border-radius: 50%;
+  background: #fff;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid #eee;
+  cursor: pointer;
+}
+.skl.skl-circle ul li .progress span {
+  position: absolute;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }
