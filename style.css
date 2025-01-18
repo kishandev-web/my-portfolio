@@ -683,7 +683,7 @@ RESUME SECTION
   align-items: center;
   justify-content: center;
 }
-.skills-item {
+.bottom-space {
   margin-bottom: 2.5rem;
 }
 .skill-lists ul {
@@ -821,4 +821,20 @@ RESUME SECTION
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
+}
+.skl.skl-list ul {
+  padding: 3rem 0rem 1rem 2rem;
+  list-style: none;
+  font-size: 1.6rem;
+}
+.skl.skl-list ul li {
+  margin-bottom: 1.5rem;
+  color: #646464;
+}
+.skl.skl-list ul li .skl-icon {
+  font-size: 1.5rem;
+  color: #78cc6d;
+}
+.skl.skl-list ul li .name {
+  padding-left: 1rem;
 }
