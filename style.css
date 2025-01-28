@@ -47,6 +47,12 @@ body {
   margin-top: 2rem;
   border-radius: 5px;
 }
+.header-bg a:link {
+  color: #323232;
+}
+.header-bg a:hover {
+  color: #78cc6d;
+}
 .lists {
   list-style: none;
   display: flex;
@@ -618,6 +624,22 @@ RESUME SECTION
 }
 .pad-bot {
   padding-bottom: 3rem;
+}
+.progress-dot {
+  position: relative;
+}
+.progress-dot::before {
+  content: "";
+  position: absolute;
+  left: -2rem;
+  top: 6px;
+  width: 1rem;
+  height: 1rem;
+  background-color: #ddd;
+  border-radius: 50%;
+}
+.progress-dot.active::before {
+  background-color: #78cc6d;
 }
 .card-title {
   font-size: 1.7rem;
